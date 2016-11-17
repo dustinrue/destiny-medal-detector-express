@@ -14,6 +14,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "destiny-medal-detector": "dustinrue/destiny-medal-detector",
+    "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "request": "^2.78.0",
     "tmp": "^0.0.30",
