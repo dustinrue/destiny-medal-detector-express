@@ -27,6 +27,7 @@ app.post('/detectmedals', function(req, res) {
       console.log("Processing " + tmpVideoFile.name);
       medalDetector.detectMedals(tmpVideoFile.name, medals, function(medalsDetected) {
         res.send(medalsDetected);
+        fs.unlink(tmpVideoFile.name);
       });
     });
   }
