@@ -7,11 +7,12 @@ var fs = require('fs');
 var tmp = require('tmp');
 var URL = require('url');
 var app = express();
-require('dotenv').load();
 
 xboxLive.username = process.env.XBLUSERNAME;
 xboxLive.password = process.env.XBLPASSWORD
-xboxLive.useragent = "Destiny Medal Detector"; 
+xboxLive.useragent = "Destiny Medal Detector";
+
+app.set('port', (process.env.PORT || 3000)); 
 
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
@@ -21,7 +22,6 @@ app.post('/detectmedals', function(req, res) {
   var gt = req.body.gt
   var vid = req.body.vid;
   
-
   xboxLive.GetDetailsForClip(gt, '247546985', vid, function(json) {
     var tmpVideoFile = tmp.fileSync();
     var file = fs.createWriteStream(tmpVideoFile.name);
@@ -44,7 +44,6 @@ app.post('/detectmedals', function(req, res) {
 });
 
 
-app.listen(3000, function() {
-  console.log("Destiny Medal Detector is ready");
-  
+app.listen(app.get('port'), function() {
+  console.log("Destiny Medal Detector is ready on port " + app.get('port'));
 });
