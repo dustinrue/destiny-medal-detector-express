@@ -1,0 +1,21 @@
+{
+  "name": "destiny-medal-detector-express",
+  "version": "0.0.1",
+  "description": "Provide PGCR and URL to video to detect medals for",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "destiny"
+  ],
+  "author": "Dustin Rue <ruedu@dustinrue.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "destiny-medal-detector": "file:../destiny-medal-detector",
+    "express": "^4.14.0",
+    "request": "^2.78.0",
+    "tmp": "^0.0.30"
+  }
+}
