@@ -7,6 +7,7 @@ var fs = require('fs');
 var tmp = require('tmp');
 var URL = require('url');
 var app = express();
+require('dotenv').load();
 
 xboxLive.username = process.env.XBLUSERNAME;
 xboxLive.password = process.env.XBLPASSWORD
