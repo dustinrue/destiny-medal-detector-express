@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "destiny-medal-detector": "file:../destiny-medal-detector",
+    "destiny-medal-detector": "dustinrue/destiny-medal-detector",
     "express": "^4.14.0",
     "request": "^2.78.0",
     "tmp": "^0.0.30"
