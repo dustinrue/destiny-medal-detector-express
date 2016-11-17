@@ -16,6 +16,7 @@
     "destiny-medal-detector": "dustinrue/destiny-medal-detector",
     "express": "^4.14.0",
     "request": "^2.78.0",
-    "tmp": "^0.0.30"
+    "tmp": "^0.0.30",
+    "xbox-live-api": "^0.0.4"
   }
 }
