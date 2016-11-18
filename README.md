@@ -7,10 +7,10 @@ Install with npm install -g dustinrue/destiny-medal-detector-express
 
 Create a file and place the following in it:
 
-* export XBLUSERNAME=<xbox live username>
-* export XBLPASSWORD=<xbox live password>
-* export PORT=3000
+* `export XBLUSERNAME=<xbox live username>`
+* `export XBLPASSWORD=<xbox live password>`
+* `export PORT=3000`
 
 Start it with
 
-source <envfile> && medaldetector-express 
+`source <envfile> && medaldetector-express`
